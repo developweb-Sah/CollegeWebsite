@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+  /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}  */
+
+
+body{
+	background-color: rgb(16, 1, 19);
+	margin: 15px 15px;
+	padding: 10px 10px;
+}
+header{
+background-image: url(img.jpg);
+width: 100%;
+height:500px;
+font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+	font-size: 60px;
+	margin: 10px;
+	padding: 10px 5px;
+}
+p{
+	
+	clear: both;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 30px;
+	float: right;
+	clear: right;
+}
+
+button{
+	display: flex;
+    width: 160px;
+	margin: 5%;
+	height: 30px;
+	position: relative; 
+	text-align: center;
+	top: 150px;
+	left: 100px;
+	float: left;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#sec1{
+	font-size: 20px;
+	margin-top: 40px;
+}
+.btn{
+	position: absolute;
+	top:600px;
+	align-content: center;
+}
+.con{
+	position: absolute;
+	top:600px;
+	left: 500px;
+	margin-right: 300px;
+}
+#sec2{
+margin-top: 100px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:18px ;
+}
+.dot{
+	list-style: square;
+
+}
+#f1{
+font-weight: bold;
+font-family: serif;
+text-decoration: underline;
+font-size: 25px;
+clear: both;
+}
+.row{
+	display: inline;
+}
+/* .teaser{
+	width: 200px;
+	display: inline-block;
+	height: 400px;
+	margin: 5px;
+	padding: 5px;
+} */
+.grid{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+  
+    
+}
+.teaser{
+    padding: 10px;
+    box-sizing:boarder-box;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	flex-basis:20%;
+	width: 25%;
+	display: inline-block;
+	height: 200px;
+
+}
+h2{
+	font-weight: bold;
+	font-size: 25px;
+	
+}
+.teaser:last-child{
+    margin-right: 0;
+}
+.teaser:first-child{
+	position: relative;
+	top: -22px;
+}
+.teaser:nth-child(1){background-color: #c0dbe2;}
+.teaser:nth-child(2){background-color: #cdf1c3;}
+.teaser:nth-child(3){background-color: #c0dbe2;}
+
+
+
+
+button{
+	top: 50px;
+	left: 40px;
+	background-color: rgb(168, 168, 206);
+	text-decoration: none;
+}
+button:hover{
+	background-color: darkgray;
+	color: black;
+}
+.con1{
+	position: absolute;
+	top: 210px;
+	left: 900px;
+}
+
+.btn3{
+	display: inline;
+	text-decoration: none;
+	border: 10px;
+	box-sizing: border-box;
+	padding: 30px;
+	margin: 100px 10px 10px 30px;
+}
+
+.btn2{
+	top: 10px;
+	
+
+}
+
+
+
+.left{
+	box-sizing: border-box;
+	float: left;
+	width: 60%;
+	padding: 50px;
+	color: darkblue;
+	line-height: 4;
+	background-color: darkgray;
+	clear: right;
+}
+#submit{
+	width: 250px;
+	height: 200px;
+	color: black;
+
+}
+#submit:hover{
+	background-color: blue;
+	color: cornsilk;
+}
+.right{
+	position: relative;
+	left: 30px;
+	clear: left;
+}
+
+.center{
+	position: relative;
+	display: inline;
+	
+}
+input{
+	width: 60%;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+  
+    
+}
+.box{
+    padding: 20px;
+    box-sizing:boarder-box;
+    margin-bottom: 30px;
+    flex-basis:30%
+
+}
+.box:last-child{
+    margin-right: 0;
+}
+@media(min-width:900px){
+    .container{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+.box:nth-child(1){background-color: #c0dbe2;}
+.box:nth-child(2){background-color: #cdf1c3;}
+.box:nth-child(3){background-color: #ccb9da;}
+
+.form1{
+	margin: 20px;
+	padding: 10px;
+	color: darkblue;
+}
+.form2{
+	background-color: darkgray;
+}
+.back{
+	background-image: url(c.jpg);
+	width: 100%;
+	height: 50%;
+	font-family: serif;
+	font-size: 25px;
+	color: white;
+	line-height: 100px;
+	margin: 30px;
+	padding: 40px;
+}
+#issue{
+	width: 800px;
+	height: 200px;
+}
+body{
+	background-color: rgb(212, 207, 221);
+	margin: 10px;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
